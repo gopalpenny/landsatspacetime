@@ -1,0 +1,24 @@
+name: dsgeom
+channels:
+  - local
+  - pytorch-nightly
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pytorch
+  - torchvision
+  - geemap
+  - pandas
+  - numpy
+  - plotnine
+  - geopandas
+  - streamlit
+  - earthengine-api
+  - google-cloud-sdk
+  - ipykernel
+  - jupyterlab
+  - spyder
+  - folium
+  - streamlit-folium
+  - leafmap
+  - rasterio
