@@ -15,7 +15,15 @@ import os
 import numpy as np
 
 
-proj_path = "/Users/gopal/Google Drive/_Research/Research projects/ML/download_gee_rasters/lahore_18km"
+# %%
+proj_paths = ["/Users/gopal/Google Drive/_Research/Research projects/ML/download_gee_rasters/lahore_18km",
+              "/Users/gopalpenny/Library/CloudStorage/GoogleDrive-gopalpenny@gmail.com/My Drive/_Research/Research projects/ML/download_gee_rasters/lahore_18km"]
+
+proj_path = [x for x in proj_paths if os.path.exists(x)][0]
+
+# %%
+
+# proj_path = "/Users/gopalpenny/Library/CloudStorage/GoogleDrive-gopalpenny@gmail.com/My Drive/_Research/Research projects/ML/download_gee_rasters/lahore_18km"
 oli_path = os.path.join(proj_path,"oli8_lahore_18km_GEE")
 s2_path = os.path.join(proj_path,"s2_lahore_18km_GEE")
 
@@ -52,7 +60,7 @@ oli.transform * (0, 0)
 
 # %%
 
-oli.width * 30 + 
+# oli.width * 30 + 
 
 # %%
 oli.bounds[0] + oli.width * 30
